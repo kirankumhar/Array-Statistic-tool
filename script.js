@@ -12,17 +12,19 @@ const handleSum = () =>{
 
         return;
     }
-
-
+    
     let sum = userNumbers.reduce((acc, curr) => acc + curr, 0);
-
     let average = sum/userNumbers.length;
     let highest = Math.max(...userNumbers);
     let lowest = Math.min(...userNumbers);
+
+
+
     document.getElementById("sumResult").innerHTML = `
     Sum: ${sum} <br>
     Average: ${average} <br>
     Highest Number: ${highest} <br>
     Smallest Number: ${lowest}
     `;
+
 };
